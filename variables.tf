@@ -18,7 +18,7 @@ variable "machine_type" {
 variable "base_instance_name" {
   description = "Base name for the instances in the MIG."
   type        = string
-  default     = "myname-instance"
+  default     = "hadassah-instance"
 }
 
 variable "startup_script" {
@@ -26,3 +26,8 @@ variable "startup_script" {
   type        = string
   default     = "./startup.sh"
 }
+variable "zones" {
+  type    = list(string)
+  default = ["me-west1-a", "me-west1-b"] # עדכן את האזורים
+}
+
