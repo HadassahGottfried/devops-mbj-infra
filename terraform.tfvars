@@ -1,5 +1,0 @@
-project_id       = "terraform-hadassah-gottfried"
-region           = "me-west1"
-machine_type     = "e2-micro"
-base_instance_name = "hadassah-instance"
-startup_script   = "./startup.sh"
